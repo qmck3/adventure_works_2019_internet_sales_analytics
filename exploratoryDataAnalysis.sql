@@ -241,10 +241,6 @@ GROUP BY DATEDIFF(QUARTER, c.DateFirstPurchase, '2014-02-01')
 ORDER BY quarters_joined;
 
 --
-select TOP(1) d.Date from AdventureWorks2019_DDS.dbo.FactInternetSales s
-	JOIN AdventureWorks2019_DDS.dbo.DimDate d
-	ON s.OrderDateKey = d.DateKey
-ORDER BY d.Date DESC;
-
 SELECT * 
-FROM AdventureWorksDW2019.DBO.DimDate
+FROM AdventureWorksDW2019.DBO.DimDate;
+
